@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-cp47mw3p+@jh^vg7d46=n56ly#y2mq+6ds$39g^@fr%a#s0+de
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# If debug value is false, this must input value right.
+ALLOWED_HOSTS = [""]
+
+DEFAULT_FROM_EMAIL = []
 
 
 # Application definition
