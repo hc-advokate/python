@@ -1,4 +1,11 @@
 ```shell
+uvicorn main:app --reload
+
+# dev
+pip install "fastapi[all]"
+pip3 install "fastapi[all]"
+
+# prod
 pip install fastapi
 pip3 install fastapi
 
