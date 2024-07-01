@@ -1,8 +1,9 @@
-# python-basic
+```shell
+pip install fastapi
+pip3 install fastapi
 
-# Web服务框架
-| [awesome-python](https://github.com/vinta/awesome-python)      |
-|----------------------------------------------------------------|
-| [Django](https://www.djangoproject.com/)                       |
-| [Flask](https://flask.github.net.cn/)                          |
-| [FastAPI](https://fastapi.tiangolo.com/zh/)                    |
+pip install "uvicorn[standard]"
+pip3 install "uvicorn[standard]"
+
+uvicorn main:app --reload
+```
