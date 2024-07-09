@@ -1,4 +1,7 @@
-class Request(str):
+from pydantic import BaseModel
+
+
+class Request(BaseModel):
     id: str | int
     name: str
     age: int = 18

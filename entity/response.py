@@ -1,12 +1,15 @@
-from typing import List, Dict
-from enum import Enum
+from pydantic import BaseModel
 
 
-class Response(str):
-    code: int = 200
+class Response(BaseModel):
+    code: int = 0
     msg: str = ""
     data: None = None
 
 
-def response(item: Response):
-    return item
+def response(code: int = 0, msg: str = "", data: BaseModel | None = None):
+    return {
+        "code": code,
+        "msg": msg,
+        "data": data,
+    }

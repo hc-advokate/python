@@ -35,6 +35,6 @@ async def get_model(model_name: ModelName):
 
 
 @app.post("/items/")
-async def create_item(item: ModelName):
-    return item
+async def create_item(item: request.Request):
+    return response.response(0, "", item)
 
